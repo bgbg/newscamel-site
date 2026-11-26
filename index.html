@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NewsCamel: a ranked story feed for the Arab-world news desk</title>
+<meta name="description" content="NewsCamel reads Telegram channels and Arabic news sites, groups the reports of one event into one story across languages, and ranks the stories by how widely they are carried.">
+<link rel="icon" href="favicon.png">
+<meta property="og:title" content="NewsCamel">
+<meta property="og:description" content="A ranked story feed for editors who follow the Arab world.">
+<meta property="og:image" content="https://news.loudcamel.com/feed.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root { --paper:#FBF4E0; --card:#FFFCF8; --ink:#1E180D; --mute:#6E6149; --rule:#E7D9BE; --accent:#9A6410; --honey:#E3A53C; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink); font:18px/1.55 "Inter Tight", system-ui, sans-serif; }
+  .wrap { max-width:1040px; margin:0 auto; padding:0 24px; }
+  header { display:flex; align-items:center; gap:12px; padding:28px 0; }
+  header img { width:40px; height:40px; border-radius:6px; }
+  header b { font:700 22px "Bricolage Grotesque", system-ui, sans-serif; }
+  h1, h2 { font-family:"Bricolage Grotesque", system-ui, sans-serif; line-height:1.15; }
+  h1 { font-size:clamp(34px, 5vw, 54px); margin:32px 0 16px; max-width:16ch; }
+  .lead { font-size:21px; color:var(--mute); max-width:40em; margin:0 0 28px; }
+  .btn { display:inline-block; background:var(--ink); color:var(--card); text-decoration:none; padding:13px 22px; border-radius:8px; font-weight:600; }
+  .btn:hover { background:var(--accent); }
+  figure { margin:56px 0 0; }
+  figure img { width:100%; height:auto; display:block; border:1px solid var(--rule); border-radius:10px; box-shadow:0 12px 40px rgba(30,24,13,.12); }
+  figcaption { color:var(--mute); font-size:15px; margin-top:10px; }
+  h2 { font-size:30px; margin:72px 0 24px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:20px; }
+  .grid div { background:var(--card); border:1px solid var(--rule); border-radius:10px; padding:20px 22px; }
+  .grid h3 { margin:0 0 6px; font-size:18px; }
+  .grid p { margin:0; color:var(--mute); }
+  .contact { background:var(--card); border:1px solid var(--rule); border-radius:12px; padding:36px; margin:72px 0 0; }
+  .contact h2 { margin:0 0 10px; }
+  .contact p { margin:0 0 22px; color:var(--mute); max-width:36em; }
+  footer { color:var(--mute); font-size:14px; padding:48px 0 40px; }
+  footer a { color:var(--mute); }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header><img src="logo.png" alt=""><b>NewsCamel</b></header>
+
+  <main>
+    <h1>One ranked feed for the Arab-world news desk</h1>
+    <p class="lead">NewsCamel reads Telegram channels and Arabic news sites twice a day. It groups the reports of one event into one story, whatever language they're in, and puts the stories that most sources carry, and carry recently, at the top.</p>
+    <a class="btn" href="mailto:boris@loudcamel.com?subject=NewsCamel">Ask for a trial</a>
+
+    <figure>
+      <img src="feed.jpg" width="1600" height="885" alt="The NewsCamel feed: a table of stories with headlines in Arabic and English, the number of channels and reports behind each, first and latest report times, and buttons to save or dismiss.">
+      <figcaption>The feed on 26/11/2026, in table view. Each row is a story; the numbers show how many channels and reports carry it.</figcaption>
+    </figure>
+
+    <h2>What an editor gets</h2>
+    <div class="grid">
+      <div><h3>Stories, not posts</h3><p>Reports of the same event in Arabic, Hebrew and English land in one story. You read the event once and open the sources when you need them.</p></div>
+      <div><h3>Ranked by coverage</h3><p>A story moves up when more channels report it and when the reports are fresh. Nothing older than a week stays on the page.</p></div>
+      <div><h3>Your sources</h3><p>Keep up to three lists of up to 100 sources each. Add any public Telegram channel, or any site with an RSS feed, by pasting its link.</p></div>
+      <div><h3>Steer it in plain words</h3><p>Type "more on Lebanon" or "no sports", in any language. The instruction keeps reordering your feed until you remove it.</p></div>
+      <div><h3>It learns what you skip</h3><p>Save a story or dismiss it, and similar stories move up or down. A dismissed story comes back, marked as developing, if its coverage doubles.</p></div>
+      <div><h3>From saved stories to copy</h3><p>Turn the stories you saved into a narration script or a newsletter draft, in English, Hebrew, Arabic or Russian, with a list of the sources behind it.</p></div>
+    </div>
+
+    <section class="contact">
+      <h2>Want to try it on your desk?</h2>
+      <p>NewsCamel is in an early trial. Write and tell me which region and sources you follow, and I'll set you up.</p>
+      <a class="btn" href="mailto:boris@loudcamel.com?subject=NewsCamel">boris@loudcamel.com</a>
+    </section>
+  </main>
+
+  <footer>Made by <a href="https://loudcamel.com">Loud Camel</a>.</footer>
+</div>
+</body>
+</html>
